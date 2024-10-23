@@ -6,4 +6,4 @@
 * MUI;
 * Axios;
 * Jest;
-* Redux;
+* Redux + redux-saga;
