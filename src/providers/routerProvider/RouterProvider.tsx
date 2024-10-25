@@ -5,8 +5,7 @@ import {
 } from "react-router-dom";
 import { ROUTES } from "@/enums";
 import { App } from "@/App";
-// import HomePage from "@/pages/HomePage/HomePage";
-// import MovieDetailsPage from "@/pages/MovieDetailsPage/MovieDetailsPage";
+import { HeroDetailsPage, ListPage } from "@/pages";
 
 const router = createBrowserRouter([
   {
@@ -20,14 +19,16 @@ const router = createBrowserRouter([
       {
         path: ROUTES.LIST,
         element: (
-          <Suspense fallback={<div>Loading...</div>}>List page</Suspense>
+          <Suspense fallback={<div>Loading...</div>}>
+            <ListPage />
+          </Suspense>
         ),
       },
       {
         path: ROUTES.HERO_DETAILS,
         element: (
           <Suspense fallback={<div>Loading...</div>}>
-            Hero details page
+            <HeroDetailsPage />
           </Suspense>
         ),
       },
@@ -35,6 +36,6 @@ const router = createBrowserRouter([
   },
 ]);
 
-export const RouterProvider = () => {
+export default function RouterProvider() {
   return <Provider router={router} />;
-};
+}
