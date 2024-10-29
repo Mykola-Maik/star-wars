@@ -9,6 +9,7 @@
 * Redux + redux-saga;
 
 DEMO_LINK - [https://star-wars-one-iota.vercel.app]
+LOOM_VIDEO - [https://www.loom.com/share/5ec501e2bcbe4462b5f945dcde13c2ba?sid=6264b558-37da-490c-92b2-2b0fedda8e6f]
 
 ## To run the application, you need:
 
@@ -18,7 +19,7 @@ DEMO_LINK - [https://star-wars-one-iota.vercel.app]
 - Run `npm run dev` to start the server;
 
 ## To run tests you just need:
-- Do the same as the first three points aboveж
+- Do the same as the first three points above;
 - Run `npm run test` command;
 
 ## Screenshots
