@@ -1,4 +1,10 @@
-import { AppBar, Box, Container, Toolbar, Typography } from "@mui/material";
+import {
+  AppBar,
+  Box,
+  Container,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 import { ROUTES } from "@/enums/routes/Routes";
 import { Link } from "react-router-dom";
 import theme from "@/styles/muiTheme";

@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { ReactNode, Suspense } from "react";
 import {
   createBrowserRouter,
   RouterProvider as Provider,
@@ -36,6 +36,11 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default function RouterProvider() {
-  return <Provider router={router} />;
+export default function RouterProvider({ children }: { children: ReactNode }) {
+  return (
+    <>
+      <Provider router={router} />
+      {children}
+    </>
+  );
 }

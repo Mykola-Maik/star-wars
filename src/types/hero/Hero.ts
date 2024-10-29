@@ -13,7 +13,7 @@ export interface Hero {
   species: number[];
   vehicles: number[];
   starships: number[];
-  created: Date;
-  edited: Date;
+  created: string;
+  edited: string;
   url: string;
 }
