@@ -1,4 +1,4 @@
-import { Hero } from "@/types";
+import type { Hero } from "@/types";
 
 export interface HeroesObject {
   count: number;

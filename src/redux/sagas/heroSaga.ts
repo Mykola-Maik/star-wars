@@ -5,9 +5,9 @@ import {
   getAllHeroesSuccess,
 } from "@/redux/slices/heroSlice/heroSlice";
 import HttpService from "@/services/HttpService";
-import type { HeroesObject } from "@/types";
 import { AxiosError, type AxiosResponse } from "axios";
-import { PayloadAction } from "@reduxjs/toolkit";
+import type { HeroesObject } from "@/types";
+import type { PayloadAction } from "@reduxjs/toolkit";
 
 function* getAllHeroesSaga({
   payload: { page },

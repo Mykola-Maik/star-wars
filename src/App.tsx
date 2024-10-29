@@ -2,8 +2,19 @@ import { Box } from "@mui/material";
 import { Footer, Header } from "@/components";
 import { Outlet } from "react-router-dom";
 import theme from "@/styles/muiTheme";
+import { useEffect } from "react";
+import { useAppDispatch } from "./hooks";
+import { getAllFilmsRequest } from "@/redux/slices/filmSlice/filmSlice";
+import { getAllStarshipsRequest } from "@/redux/slices/starshipSlice/starshipSlice";
 
 export const App = () => {
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(getAllFilmsRequest());
+    dispatch(getAllStarshipsRequest());
+  }, []);
+
   return (
     <Box
       sx={{
