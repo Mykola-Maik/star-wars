@@ -36,7 +36,7 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default function RouterProvider({ children }: { children: ReactNode }) {
+export default function RouterProvider({ children }: { children?: ReactNode }) {
   return (
     <>
       <Provider router={router} />
