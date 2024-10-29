@@ -1,4 +1,4 @@
-import { Film, Hero, Starship } from "@/types";
+import type { Film, Hero, Starship } from "@/types";
 
 interface CurrentHeroSliceState {
   hero: Hero | null;

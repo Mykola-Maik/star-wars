@@ -1,4 +1,4 @@
-import { Starship } from "@/types";
+import type { Starship } from "@/types";
 
 export interface StarshipsObject {
   count: number;

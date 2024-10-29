@@ -1,5 +1,5 @@
-import { Film, Hero, Starship } from "@/types";
-import { PayloadAction, createSlice } from "@reduxjs/toolkit";
+import type { Film, Hero, Starship } from "@/types";
+import { type PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { initialState } from "./initialState";
 
 const currentHeroSlice = createSlice({

@@ -1,4 +1,4 @@
-import { Starship } from "@/types";
+import type { Starship } from "@/types";
 
 interface StarshipSliceState {
   starships: Starship[];
